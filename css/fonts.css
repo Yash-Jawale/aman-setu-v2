@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto&display=swap");
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+nav {
+	font-family: "PT Serif", serif;
+	font-size: 24px;
+}
