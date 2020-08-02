@@ -90,10 +90,21 @@ nav a {
 	padding: 10px 15px;
 }
 .submenu-active {
-	background-color: blueviolet;
-	border-radius: 3px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
 }
-/* Overriding */
+.submenu-active > a,
+.submenu-active > a::after {
+	color: #fdc124;
+}
+.submenu-active > ul > li > a {
+	color: #000;
+	border-radius: 8px;
+}
+.submenu-active > ul > li > a:hover {
+	background-color: #ddd;
+}
+/* --- Overriding --- */
 .button a {
 	background: #fff;
 	border: 0;
@@ -102,6 +113,35 @@ nav a {
 }
 #don-btn > img {
 	padding-right: 8px;
+}
+#don-btn {
+	transition: background-color 0.2s ease-out;
+}
+#don-btn:hover {
+	background-color: #ddd;
+}
+.burger-cont {
+	display: inline-block;
+}
+.burger-cont div {
+	background-color: #fff;
+	border-radius: 8px;
+	width: 30px;
+	height: 4px;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+.toggle-burger .line1 {
+	transform: rotate(-45deg) translate(-5px, 8px);
+}
+.toggle-burger .line2 {
+	opacity: 0;
+}
+.toggle-burger .line3 {
+	transform: rotate(45deg) translate(-5px, -8px);
+}
+.active {
+	padding-bottom: 12px;
 }
 
 /* Tablet Menu  */
@@ -181,17 +221,49 @@ nav a {
 	.button {
 		order: 2;
 	}
-	.submenu-active .submenu {
+	/* .submenu-active .submenu {
 		display: block;
 		position: absolute;
 		left: 0;
 		top: 68px;
 		background: #111;
-	}
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity 0.2s, visibility 0.2s; 
+	} */
 	.toggle {
 		display: none;
 	}
 	.submenu-active {
 		border-radius: 0;
+	}
+	/* --- Overriding --- */
+	.submenu {
+		position: absolute;
+		background-color: #444;
+		width: max-content;
+		display: block;
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity 0.2s, visibility 0.2s;
+		background-color: #f9f9f9;
+		border-radius: 8px;
+		padding: 12px 12px;
+		color: #000;
+	}
+	.subitem > a {
+		color: #000;
+		text-align: left;
+		border-radius: 8px;
+		transition: background-color 0.2s ease-out;
+	}
+	.subitem > a:hover {
+		background-color: #ddd;
+		color: #000;
+	}
+	.has-submenu:hover .submenu {
+		/* display: block; */
+		visibility: visible;
+		opacity: 1;
 	}
 }
