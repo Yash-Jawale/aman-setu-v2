@@ -25,6 +25,10 @@ nav a {
 .item.button {
 	padding: 9px 5px;
 }
+.item:not(.button) a,
+.item a::after {
+	transition: color 0.2s ease-out;
+}
 .item:not(.button) a:hover,
 .item a:hover::after {
 	color: black;
