@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto&display=swap");
 
+/* --- REMOVING DEFAULT --- */
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
 /* --- COLORS --- */
 
 /* Default theme colors */
@@ -8,6 +16,12 @@
 	--bg-col: #fff;
 	--heading: #000;
 	--body: #000;
+	--foot-bg: #f2f2f2;
+	--foot-line: #bdbdbd;
+	--zig-l: #fdc124;
+	--zig-b: #bdbdbd;
+	--zig-f: #fdc124;
+	--gutter-width: 15%;
 }
 
 /* Dark theme colors */
@@ -19,7 +33,13 @@
 
 /* --- TYPOGRAPHY --- */
 
-body {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: "Roboto", sans-serif;
 }
 

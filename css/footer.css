@@ -1,0 +1,41 @@
+footer {
+	width: 100%;
+	background-color: var(--foot-bg);
+	padding-left: var(--gutter-width);
+	padding-right: var(--gutter-width);
+	padding-top: 60px;
+	padding-bottom: 28px;
+}
+
+.ft-zig {
+	background-color: var(--zig-f);
+	width: 50px;
+	height: 8px;
+}
+
+.foot-head {
+	width: 100%;
+}
+
+.foot-main {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.ft-main-item {
+	min-width: 12.5rem;
+	padding-top: 16px;
+}
+
+.ft-paragraph {
+	padding-bottom: 12px;
+}
+
+.foot-legal {
+	width: 100%;
+	text-align: center;
+	padding-top: 28px;
+	margin-top: 18px;
+	border-top: 1px solid var(--foot-line);
+}
