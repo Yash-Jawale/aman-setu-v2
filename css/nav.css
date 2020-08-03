@@ -5,7 +5,7 @@
 	margin: 0;
 }
 nav {
-	background: #fdc124;
+	background: var(--primary);
 	padding: 0 15px;
 }
 nav a {
