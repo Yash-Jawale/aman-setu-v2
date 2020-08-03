@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto&display=swap");
+
+/* --- COLORS --- */
+
+/* Default theme colors */
+:root {
+	--primary: #fdc124;
+	--bg-col: #fff;
+	--heading: #000;
+	--body: #000;
+}
+
+/* Dark theme colors */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary: #000;
+	}
+}
+
+/* --- TYPOGRAPHY --- */
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+nav {
+	font-family: "PT Serif", serif;
+}
+
+/* --- FONT SIZES --- */
+
+nav {
+	font-size: 18px;
+}
