@@ -1,11 +1,11 @@
 /* Basic Styling */
 
 nav {
-	background: var(--primary);
+	background: var(--nav-bg);
 	padding: 0 15px;
 }
 nav a {
-	color: #fff;
+	color: var(--nav-links);
 	text-decoration: none;
 }
 .menu,
@@ -15,6 +15,13 @@ nav a {
 .logo {
 	padding: 7.5px 10px 7.5px 0;
 }
+
+@media (prefers-color-scheme: dark) {
+	.logo > a > img {
+		filter: brightness(0) saturate(100%);
+	}
+}
+
 .item {
 	padding: 10px;
 }
@@ -27,7 +34,7 @@ nav a {
 }
 .item:not(.button) a:hover,
 .item a:hover::after {
-	color: black;
+	color: var(--nav-links-hover);
 }
 
 /* Mobile Menu */
@@ -83,32 +90,32 @@ nav a {
 	line-height: 16px;
 	font-weight: 900;
 	content: "\f078";
-	color: #fff;
+	color: var(--nav-links);
 	padding-left: 5px;
 }
 .subitem a {
 	padding: 10px 15px;
 }
 .submenu-active {
-	background-color: #f9f9f9;
+	background-color: var(--nav-submenu-bg);
 	border-radius: 8px;
 }
 .submenu-active > a,
 .submenu-active > a::after {
-	color: #fdc124;
+	color: var(--nav-submenu-head);
 }
 .submenu-active > ul > li > a {
-	color: #000;
+	color: var(--nav-submenu-links);
 	border-radius: 8px;
 }
 .submenu-active > ul > li > a:hover {
-	background-color: #ddd;
+	background-color: var(--nav-submenu-highlight);
 }
 /* --- Overriding --- */
 .button a {
-	background: #fff;
+	background: var(--nav-btn-bg);
 	border: 0;
-	color: #000;
+	color: var(--nav-btn-txt);
 	border-radius: 8px;
 }
 #don-btn > img {
@@ -118,13 +125,13 @@ nav a {
 	transition: background-color 0.2s ease-out;
 }
 #don-btn:hover {
-	background-color: #ddd;
+	background-color: var(--nav-btn-bg-hover);
 }
 .burger-cont {
 	display: inline-block;
 }
 .burger-cont div {
-	background-color: #fff;
+	background-color: var(--nav-burger);
 	border-radius: 8px;
 	width: 30px;
 	height: 4px;
@@ -177,17 +184,17 @@ nav a {
 	.button.secondary {
 		border: 0;
 	}
-	.button.secondary a {
+	/* .button.secondary a {
 		background: transparent;
 		border: 1px #0080ff solid;
-	}
+	} */
 	.button a:hover {
 		text-decoration: none;
 	}
-	.button:not(.secondary) a:hover {
+	/* .button:not(.secondary) a:hover {
 		background: royalblue;
 		border-color: darkblue;
-	}
+	} */
 	#don-btn {
 		display: flex;
 		align-items: center;
@@ -240,26 +247,25 @@ nav a {
 	/* --- Overriding --- */
 	.submenu {
 		position: absolute;
-		background-color: #444;
 		width: max-content;
 		display: block;
 		visibility: hidden;
 		opacity: 0;
 		transition: opacity 0.2s, visibility 0.2s;
-		background-color: #f9f9f9;
+		background-color: var(--nav-submenu-bg);
 		border-radius: 8px;
 		padding: 12px 12px;
-		color: #000;
+		color: var(--nav-submenu-links);
 	}
 	.subitem > a {
-		color: #000;
+		color: var(--nav-submenu-links);
 		text-align: left;
 		border-radius: 8px;
 		transition: background-color 0.2s ease-out;
 	}
 	.subitem > a:hover {
-		background-color: #ddd;
-		color: #000;
+		background-color: var(--nav-submenu-highlight);
+		color: var(--nav-submenu-links);
 	}
 	.has-submenu:hover .submenu {
 		/* display: block; */

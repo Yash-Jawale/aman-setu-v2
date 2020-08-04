@@ -14,13 +14,34 @@
 :root {
 	--primary: #fdc124;
 	--bg-col: #fff;
+
+	/*Navigation*/
+	--nav-bg: #fdc124;
+	--nav-links: #fff;
+	--nav-links-hover: #000;
+	--nav-btn-bg: #fff;
+	--nav-btn-bg-hover: #ddd;
+	--nav-btn-txt: #000;
+	--nav-submenu-bg: #f9f9f9;
+	--nav-submenu-head: #fdc124;
+	--nav-submenu-links: #000;
+	--nav-submenu-highlight: #ddd;
+	--nav-burger: #fff;
+
+	/*Text*/
 	--heading: #000;
 	--body: #000;
+
+	/*Footer*/
 	--foot-bg: #f2f2f2;
 	--foot-line: #bdbdbd;
+
+	/*ZigZag Decal*/
 	--zig-l: #fdc124;
 	--zig-b: #bdbdbd;
 	--zig-f: #fdc124;
+
+	/*Layout*/
 	--gutter-width: 15%;
 }
 
@@ -28,6 +49,16 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--primary: #000;
+		--bg-col: #121212;
+
+		/* --nav-bg: #fdd368; */
+		--nav-links: #000;
+		--nav-links-hover: #fdfdfd;
+		--nav-btn-bg: #666;
+		--nav-btn-bg-hover: #000;
+		--nav-btn-txt: #fdfdfd;
+		--nav-submenu-bg: #666;
+		--nav-submenu-highlight: #888;
 	}
 }
 
@@ -51,4 +82,10 @@ nav {
 
 nav {
 	font-size: 18px;
+}
+
+/* --- GLOBAL BACKGROUND COLOR --- */
+
+body {
+	background-color: var(--bg-col);
 }

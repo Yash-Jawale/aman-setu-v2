@@ -9,8 +9,9 @@ footer {
 
 .ft-zig {
 	background-color: var(--zig-f);
-	width: 50px;
+	width: 93px;
 	height: 8px;
+	margin-top: 16px;
 }
 
 .foot-head {
