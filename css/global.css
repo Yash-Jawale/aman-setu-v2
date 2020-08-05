@@ -45,6 +45,7 @@
 
 	/*Layout*/
 	--gutter-width: 15%;
+	--gap: 80px;
 }
 
 /* Dark theme colors */
@@ -80,26 +81,23 @@
 		--zig-l: #fdd368;
 		--zig-b: #bdbdbd;
 		--zig-f: #fdd368;
-
-		/*Layout*/
-		--gutter-width: 15%;
 	}
 }
 
 /* --- TYPOGRAPHY --- */
 
-body,
+nav,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: "Roboto", sans-serif;
+	font-family: "PT Serif", serif;
 }
 
-nav {
-	font-family: "PT Serif", serif;
+body {
+	font-family: "Roboto", sans-serif;
 }
 
 /* --- FONT SIZES --- */
