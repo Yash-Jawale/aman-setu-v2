@@ -124,6 +124,13 @@ nav a {
 #don-btn {
 	transition: background-color 0.2s ease-out;
 }
+#don-btn {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
 #don-btn:hover {
 	background-color: var(--nav-btn-bg-hover);
 }
@@ -195,12 +202,12 @@ nav a {
 		background: royalblue;
 		border-color: darkblue;
 	} */
-	#don-btn {
+	/* #don-btn {
 		display: flex;
 		align-items: center;
 		width: 100%;
 		height: 100%;
-	}
+	} */
 	/* #don-btn > img {
 		padding-right: 8px;
 	} */

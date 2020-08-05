@@ -35,6 +35,8 @@
 	/*Footer*/
 	--foot-bg: #f2f2f2;
 	--foot-line: #bdbdbd;
+	--foot-links: #333333;
+	--foot-head: #000;
 
 	/*ZigZag Decal*/
 	--zig-l: #fdc124;
@@ -51,14 +53,36 @@
 		--primary: #000;
 		--bg-col: #121212;
 
-		/* --nav-bg: #fdd368; */
+		/*Navigation*/
+		--nav-bg: #fdd368;
 		--nav-links: #000;
 		--nav-links-hover: #fdfdfd;
 		--nav-btn-bg: #666;
 		--nav-btn-bg-hover: #000;
 		--nav-btn-txt: #fdfdfd;
 		--nav-submenu-bg: #666;
+		--nav-submenu-head: #fdd368;
+		--nav-submenu-links: #e0e0e0;
 		--nav-submenu-highlight: #888;
+		--nav-burger: #000;
+
+		/*Text*/
+		--heading: #000;
+		--body: #000;
+
+		/*Footer*/
+		--foot-bg: #000;
+		--foot-line: #bdbdbd;
+		--foot-links: #a0a0a0;
+		--foot-head: #e0e0e0;
+
+		/*ZigZag Decal*/
+		--zig-l: #fdd368;
+		--zig-b: #bdbdbd;
+		--zig-f: #fdd368;
+
+		/*Layout*/
+		--gutter-width: 15%;
 	}
 }
 

@@ -5,6 +5,7 @@ footer {
 	padding-right: var(--gutter-width);
 	padding-top: 60px;
 	padding-bottom: 28px;
+	color: var(--foot-links);
 }
 
 .ft-zig {
@@ -16,6 +17,7 @@ footer {
 
 .foot-head {
 	width: 100%;
+	color: var(--foot-head);
 }
 
 .foot-main {
@@ -39,4 +41,19 @@ footer {
 	padding-top: 28px;
 	margin-top: 18px;
 	border-top: 1px solid var(--foot-line);
+}
+
+footer ul {
+	list-style-type: none;
+}
+footer a {
+	text-decoration: none;
+	color: var(--foot-links);
+}
+footer a:hover {
+	text-decoration: underline;
+}
+footer ul > li,
+footer p {
+	margin-bottom: 16px;
 }
