@@ -113,3 +113,30 @@ body {
 	border-radius: 8px;
 	color: var(--secondary-btn-border);
 }
+
+/* --- RESPONSIVE --- */
+
+@media all and (max-width: 1024px) {
+	/*--- Overriding Global Layout Variables --- */
+	:root {
+		--gap: 40px;
+		--gutter-width: 10%;
+	}
+
+	[class*="col-"] {
+		width: 100%;
+		margin-bottom: 36px;
+	}
+	.cont-l,
+	.cont-r {
+		max-width: none;
+	}
+	.main-row,
+	.sub-row {
+		flex-direction: column;
+	}
+	.main-row {
+		padding-left: var(--gutter-width);
+		padding-right: var(--gutter-width);
+	}
+}
