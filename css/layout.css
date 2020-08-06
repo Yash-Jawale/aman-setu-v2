@@ -66,3 +66,50 @@ body {
 .gutter {
 	width: var(--gutter-width);
 }
+.cont-l,
+.cont-r {
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.cont-l {
+	margin-right: var(--cont-width);
+}
+.cont-r {
+	margin-left: var(--cont-width);
+}
+
+/* --- BUTTONS --- */
+
+.primary {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	width: 100%;
+	text-align: center;
+	padding: 16px 70px;
+	margin-top: 16px;
+	border: 2px solid var(--primary-btn-bg);
+	background-color: var(--primary-btn-bg);
+	border-radius: 8px;
+	color: var(--primary-btn-txt);
+}
+.secondary {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	width: 100%;
+	text-align: center;
+	padding: 16px 70px;
+	margin-top: 16px;
+	border: 2px solid var(--secondary-btn-border);
+	background-color: transparent;
+	border-radius: 8px;
+	color: var(--secondary-btn-border);
+}

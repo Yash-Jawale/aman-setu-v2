@@ -31,6 +31,9 @@
 	/*Text*/
 	--heading: #000;
 	--body: #000;
+	--primary-btn-bg: #fdc124;
+	--primary-btn-txt: #fff;
+	--secondary-btn-border: #bdbdbd;
 
 	/*Footer*/
 	--foot-bg: #f2f2f2;
@@ -46,6 +49,7 @@
 	/*Layout*/
 	--gutter-width: 15%;
 	--gap: 80px;
+	--cont-width: 300px;
 }
 
 /* Dark theme colors */
@@ -70,6 +74,9 @@
 		/*Text*/
 		--heading: #000;
 		--body: #000;
+		--primary-btn-bg: #fdc124;
+		--primary-btn-txt: #fff;
+		--secondary-btn-border: #bdbdbd;
 
 		/*Footer*/
 		--foot-bg: #000;
@@ -104,6 +111,11 @@ body {
 
 nav {
 	font-size: 18px;
+}
+p {
+	font-size: 1rem;
+	padding-bottom: 16px;
+	line-height: 1.5;
 }
 
 /* --- GLOBAL BACKGROUND COLOR --- */
