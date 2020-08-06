@@ -32,7 +32,6 @@
 	--heading: #000;
 	--body: #000;
 	--primary-btn-bg: #fdc124;
-	--primary-btn-txt: #fff;
 	--secondary-btn-border: #bdbdbd;
 
 	/*Footer*/
@@ -72,10 +71,9 @@
 		--nav-burger: #000;
 
 		/*Text*/
-		--heading: #000;
-		--body: #000;
+		--heading: #e0e0e0;
+		--body: #a0a0a0;
 		--primary-btn-bg: #fdc124;
-		--primary-btn-txt: #fff;
 		--secondary-btn-border: #bdbdbd;
 
 		/*Footer*/
@@ -101,10 +99,12 @@ h4,
 h5,
 h6 {
 	font-family: "PT Serif", serif;
+	color: var(--heading);
 }
 
 body {
 	font-family: "Roboto", sans-serif;
+	color: var(--body);
 }
 
 /* --- FONT SIZES --- */

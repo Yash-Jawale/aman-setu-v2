@@ -96,7 +96,7 @@ body {
 	border: 2px solid var(--primary-btn-bg);
 	background-color: var(--primary-btn-bg);
 	border-radius: 8px;
-	color: var(--primary-btn-txt);
+	color: var(--bg-col);
 }
 .secondary {
 	text-transform: uppercase;
