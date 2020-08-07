@@ -121,6 +121,32 @@ body {
 	z-index: -1;
 	object-fit: cover;
 }
+.features {
+	padding-bottom: 40px;
+}
+.features p {
+	padding: 0;
+	line-height: 2;
+	font-size: 0.875rem;
+}
+.features img {
+	padding-bottom: 16px;
+}
+.features h3 {
+	font-size: 1.5rem;
+	padding-bottom: 16px;
+}
+.features a {
+	color: var(--primary);
+	text-decoration: none;
+	line-height: 2;
+}
+.features a::after {
+	content: " >";
+}
+.home-section > h2 {
+	padding-bottom: 2rem;
+}
 
 /* --- BUTTONS --- */
 
@@ -185,5 +211,9 @@ body {
 	.main-row {
 		padding-left: var(--gutter-width);
 		padding-right: var(--gutter-width);
+	}
+	.img-cont-l,
+	.img-cont-r {
+		height: 200px;
 	}
 }
