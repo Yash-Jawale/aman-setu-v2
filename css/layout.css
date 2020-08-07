@@ -87,6 +87,12 @@ body {
 	align-items: center;
 	justify-content: flex-start;
 	border-radius: 0 8px 8px 0;
+	overflow: hidden;
+
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
 }
 .img-cont-r {
 	width: 100%;
@@ -95,6 +101,23 @@ body {
 	align-items: center;
 	justify-content: flex-end;
 	border-radius: 8px 0 0 8px;
+	overflow: hidden;
+
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.side-img {
+	width: 100%;
+	height: 100%;
+
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	object-fit: cover;
 }
 
 /* --- BUTTONS --- */
@@ -146,6 +169,8 @@ body {
 	.cont-l,
 	.cont-r {
 		max-width: none;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.main-row,
 	.sub-row {
