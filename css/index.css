@@ -10,7 +10,7 @@
 		),
 		url(../assets/images/homepage/hero.jpg);
 	background-size: cover;
-	background-position: center bottom;
+	background-position: center center;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
