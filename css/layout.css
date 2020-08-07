@@ -132,10 +132,10 @@ body {
 .features img {
 	padding-bottom: 16px;
 }
-.features h3 {
+/* .features h3 {
 	font-size: 1.5rem;
 	padding-bottom: 16px;
-}
+} */
 .features a {
 	color: var(--primary);
 	text-decoration: none;
