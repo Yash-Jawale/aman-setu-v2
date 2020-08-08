@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,700&family=Roboto:wght@400;500&display=swap");
 
 /* --- REMOVING DEFAULT --- */
 
@@ -32,6 +33,7 @@
 	/*Text*/
 	--heading: #000;
 	--body: #000;
+	--grey-text: #4f4f4f;
 	--primary-btn-bg: #fdc124;
 	--secondary-btn-border: #bdbdbd;
 
@@ -77,6 +79,7 @@
 		--heading: #e0e0e0;
 		--body: #e0e0e0;
 		/* --body: #a0a0a0; */
+		--grey-text: #a0a0a0;
 		--primary-btn-bg: #fdc124;
 		--secondary-btn-border: #bdbdbd;
 
@@ -131,6 +134,10 @@ h6 {
 body {
 	font-family: "Roboto", sans-serif;
 	color: var(--body);
+}
+
+.grey-text {
+	color: var(--grey-text);
 }
 
 /* --- FONT SIZES --- */
