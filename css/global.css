@@ -56,7 +56,7 @@
 /* Dark theme colors */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--primary: #000;
+		--primary: #fdd368;
 		--bg-col: #121212;
 		--scroll-bg: #000;
 
