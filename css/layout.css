@@ -225,3 +225,9 @@ body {
 		height: 200px;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	.features img {
+		filter: contrast(0.9);
+	}
+}
