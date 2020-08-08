@@ -42,7 +42,12 @@ body {
 .col-12 {
 	width: 100%;
 }
-
+.col-b {
+	width: 65%;
+}
+.col-s {
+	width: 35%;
+}
 .gutter {
 	width: var(--gutter-width);
 }
