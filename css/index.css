@@ -66,6 +66,41 @@ h2.review-section-head {
 .review:not(:last-child) {
 	padding-bottom: 46px;
 }
+
+.quote-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 900px;
+}
+div.quote-img {
+	width: 112px;
+	height: 112px;
+	border: 2px #000 solid;
+	border-radius: 50%;
+	margin-bottom: 16px;
+}
+.quote-section p {
+	font-family: "PT Serif", serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 2.5rem;
+	line-height: 1.2;
+	text-align: center;
+	color: var(--primary);
+	margin-top: 36px;
+	margin-bottom: 36px;
+}
+.quote-author {
+	font-size: 1.5rem;
+	font-family: "PT Serif", serif;
+	font-weight: bold;
+}
+.quote-designation {
+	font-size: 14px;
+	line-height: 2;
+}
 /* .review:first-child {
 	color: red;
 } */

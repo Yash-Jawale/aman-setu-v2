@@ -164,3 +164,23 @@ h3 {
 body {
 	background-color: var(--bg-col);
 }
+
+/* --- GLOBAL ELEMENTS --- */
+
+/* Image inside div */
+
+.image-cont {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.image-cont > img {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	object-fit: cover;
+}
