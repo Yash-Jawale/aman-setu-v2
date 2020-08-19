@@ -281,7 +281,7 @@ input[type="radio"]:checked + label {
 	background-color: var(--primary);
 	border-color: var(--primary);
 	border-radius: var(--radius);
-	color: #ffffff;
+	color: var(--bg-col);
 }
 input[type="submit"] {
 	background-color: var(--primary);
@@ -378,7 +378,7 @@ input[type="submit"]:hover {
 	top: 5px;
 	width: 5px;
 	height: 10px;
-	border: solid white;
+	border: solid var(--bg-col);
 	border-width: 0 3px 3px 0;
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
@@ -433,5 +433,25 @@ input[type="submit"]:hover {
 @media (prefers-color-scheme: dark) {
 	.features img {
 		filter: contrast(0.9);
+	}
+	form > input {
+		color: #fff;
+	}
+	input[type="date"]:before {
+		color: #fff;
+	}
+	.side-img {
+		opacity: 0.75;
+	}
+	.hero {
+		background-image: linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.4)
+			),
+			url(../assets/images/homepage/hero.jpg) !important;
+	}
+	.video-container {
+		opacity: 0.75;
 	}
 }

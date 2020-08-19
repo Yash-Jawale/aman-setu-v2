@@ -71,7 +71,7 @@
 		--primary: #fdd368;
 		--bg-col: #121212;
 		--scroll-bg: #000;
-		--primary-hover: #e6b302;
+		--primary-hover: #ddba62;
 
 		/*Navigation*/
 		--nav-bg: #fdd368;
@@ -95,12 +95,12 @@
 		--secondary-btn-border: #bdbdbd;
 
 		/*Forms*/
-		--form-bg: #f2f2f2;
-		--form-select-border: #bdbdbd;
+		--form-bg: #2c2c2c;
+		--form-select-border: #383838;
 		--form-color: #bdbdbd;
 		--form-p: #828282;
-		--form-hover: #f3f3f3;
-		--form-dark-grey: #4f4f4f;
+		--form-hover: #474747;
+		--form-dark-grey: #a1a1a1;
 
 		/*Footer*/
 		--foot-bg: #000;
