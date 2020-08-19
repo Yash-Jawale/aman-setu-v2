@@ -421,6 +421,9 @@ input[type="submit"]:hover {
 		padding-right: 0;
 		border-radius: var(--radius);
 	}
+	.no-radius {
+		border-radius: var(--radius);
+	}
 	.main-row,
 	.sub-row {
 		flex-direction: column;
@@ -435,6 +438,10 @@ input[type="submit"]:hover {
 	}
 	.space {
 		padding: 0;
+	}
+	.no-spacing {
+		padding-top: var(--gap);
+		padding-bottom: var(--gap);
 	}
 }
 
