@@ -411,6 +411,7 @@ input[type="submit"]:hover {
 		max-width: none;
 		padding-left: 0;
 		padding-right: 0;
+		border-radius: var(--radius);
 	}
 	.main-row,
 	.sub-row {
@@ -423,6 +424,9 @@ input[type="submit"]:hover {
 	.img-cont-l,
 	.img-cont-r {
 		height: 200px;
+	}
+	.space {
+		padding: 0;
 	}
 }
 
