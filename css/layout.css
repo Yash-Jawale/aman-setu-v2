@@ -291,6 +291,107 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	background-color: var(--primary-hover);
 }
+.amt-block {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.amt-row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-bottom: -16px;
+	margin-top: -16px;
+}
+.amt-row > input {
+	border-radius: var(--radius);
+	background-color: var(--bg-col);
+	border: 2px var(--primary) solid;
+	color: var(--primary);
+	padding: 15px;
+	margin-right: 8px;
+	transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+.amt-row > input:hover,
+.amt-row > input:active {
+	background-color: var(--primary);
+	color: var(--bg-col);
+}
+
+.check-container {
+	position: relative;
+	padding: 0px 0px 0px 35px;
+	margin: 0;
+	margin-bottom: 24px;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: var(--bg-col);
+	color: var(--form-dark-grey);
+	border: none;
+	border-radius: initial;
+	width: 100%;
+}
+.check-container:hover {
+	background-color: var(--bg-col);
+	color: var(--form-dark-grey);
+}
+.check-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 4px;
+}
+.check-container:hover input ~ .checkmark {
+	background-color: #ccc;
+	transition: background-color 0.2s ease-out;
+}
+.check-container input:checked ~ .checkmark {
+	background-color: var(--primary);
+}
+.check-container input:checked:hover ~ .checkmark {
+	background-color: var(--primary);
+}
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.check-container input:checked ~ .checkmark:after {
+	display: block;
+}
+.check-container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* ZIG_ZAG DECALS */
+
+.sm-grey-zig {
+	background-color: var(--zig-b);
+	width: 93px;
+	height: 8px;
+}
 
 /* --- RESPONSIVE --- */
 

@@ -44,6 +44,7 @@
 	--form-color: #bdbdbd;
 	--form-p: #828282;
 	--form-hover: #f3f3f3;
+	--form-dark-grey: #4f4f4f;
 
 	/*Footer*/
 	--foot-bg: #f2f2f2;
@@ -99,6 +100,7 @@
 		--form-color: #bdbdbd;
 		--form-p: #828282;
 		--form-hover: #f3f3f3;
+		--form-dark-grey: #4f4f4f;
 
 		/*Footer*/
 		--foot-bg: #000;
