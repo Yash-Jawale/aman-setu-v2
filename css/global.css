@@ -199,6 +199,17 @@ body {
 	background-color: var(--bg-col);
 }
 
+::-moz-selection {
+	/* Code for Firefox */
+	color: var(--bg-col);
+	background: var(--primary);
+}
+
+::selection {
+	color: var(--bg-col);
+	background: var(--primary);
+}
+
 /* --- GLOBAL ELEMENTS --- */
 
 /* Image inside div */
