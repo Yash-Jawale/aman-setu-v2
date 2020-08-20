@@ -392,6 +392,14 @@ input[type="submit"]:hover {
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+textarea {
+	border: 0;
+	background-color: var(--form-bg);
+	padding: 16px 24px;
+	border-radius: var(--radius);
+	margin-bottom: 28px;
+	resize: vertical;
+}
 
 /* ZIG_ZAG DECALS */
 
@@ -399,6 +407,10 @@ input[type="submit"]:hover {
 	background-color: var(--zig-b);
 	width: 93px;
 	height: 8px;
+	mask-image: url("../assets/zig.svg");
+	mask-size: cover;
+	-webkit-mask-image: url("../assets/zig.svg");
+	-webkit-mask-size: cover;
 }
 
 /* --- RESPONSIVE --- */
@@ -450,7 +462,8 @@ input[type="submit"]:hover {
 	.features img {
 		filter: contrast(0.9);
 	}
-	form > input {
+	form > input,
+	textarea {
 		color: #fff;
 	}
 	input[type="date"]:before {
