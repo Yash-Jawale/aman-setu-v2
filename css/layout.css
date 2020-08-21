@@ -480,9 +480,24 @@ h2.black-head {
 }
 ul {
 	padding-left: 1rem;
+	padding-bottom: 16px;
+	line-height: 1.5;
 }
 ul > li {
-	padding-bottom: 0.725rem;
+	padding-bottom: 1.2rem;
+}
+
+.space-l {
+	padding-left: var(--gutter-width);
+}
+.space-r {
+	padding-right: var(--gutter-width);
+}
+.no-height {
+	height: unset;
+}
+.sep-image {
+	width: 100%;
 }
 
 /* --- RESPONSIVE --- */
@@ -527,6 +542,9 @@ ul > li {
 	.no-spacing {
 		padding-top: var(--gap);
 		padding-bottom: var(--gap);
+	}
+	.sep-image {
+		border-radius: var(--radius);
 	}
 }
 
