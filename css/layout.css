@@ -478,6 +478,13 @@ h2.black-head {
 	margin-bottom: 1.5rem;
 	font-size: 1.5rem;
 }
+h2.head-no-border {
+	color: var(--heading);
+	padding-top: 40px;
+	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+}
+
 ul {
 	padding-left: 1rem;
 	padding-bottom: 16px;
@@ -498,6 +505,14 @@ ul > li {
 }
 .sep-image {
 	width: 100%;
+}
+
+.sub-blocks h3 {
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: "Roboto", sans-serif;
+	padding-bottom: 0;
+	padding-top: 1.2rem;
 }
 
 /* --- RESPONSIVE --- */
@@ -545,6 +560,8 @@ ul > li {
 	}
 	.sep-image {
 		border-radius: var(--radius);
+		padding-top: var(--gap);
+		padding-bottom: var(--gap);
 	}
 }
 
@@ -559,7 +576,8 @@ ul > li {
 	input[type="date"]:before {
 		color: #fff;
 	}
-	.side-img {
+	.side-img,
+	.sep-image {
 		opacity: 0.75;
 	}
 	.hero {
