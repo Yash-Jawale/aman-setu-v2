@@ -115,6 +115,7 @@ body {
 	position: relative;
 	width: 100%;
 }
+
 .side-img {
 	width: 100%;
 	height: 100%;
@@ -515,6 +516,66 @@ ul > li {
 	padding-top: 1.2rem;
 }
 
+div.single-head {
+	max-width: 300px;
+}
+
+.profile-container {
+	flex-direction: column;
+}
+
+.profile-img {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	/* width: 100%; */
+}
+.profile-img > image {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	object-fit: cover;
+}
+
+.no-top-space {
+	margin-top: 0;
+}
+
+.profile-section {
+	display: flex;
+	padding-bottom: var(--gap);
+}
+.profile-head {
+	padding-right: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.profile-head > h2 {
+	font-size: 1.5rem;
+	padding-top: 1rem;
+	color: var(--heading);
+}
+.profile-head > p {
+	font-size: 0.875rem;
+	color: var(--secondary-btn-border);
+}
+.profile > p {
+	font-size: 0.875rem;
+	line-height: 2rem;
+}
+
+.center-button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.center-button > a {
+	max-width: 300px;
+}
+
 /* --- RESPONSIVE --- */
 
 @media all and (max-width: 1024px) {
@@ -563,6 +624,15 @@ ul > li {
 		padding-top: var(--gap);
 		padding-bottom: var(--gap);
 	}
+
+	.profile-section {
+		flex-direction: column;
+		padding-bottom: calc(2 * var(--gap));
+	}
+	.profile-head {
+		align-items: center;
+		padding: 0;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -577,7 +647,8 @@ ul > li {
 		color: #fff;
 	}
 	.side-img,
-	.sep-image {
+	.sep-image,
+	.profile-img {
 		opacity: 0.75;
 	}
 	.hero {
