@@ -13,6 +13,11 @@ footer {
 	width: 93px;
 	height: 8px;
 	margin-top: 16px;
+
+	mask-image: url("../assets/zig.svg");
+	mask-size: cover;
+	-webkit-mask-image: url("../assets/zig.svg");
+	-webkit-mask-size: cover;
 }
 
 .foot-head {
