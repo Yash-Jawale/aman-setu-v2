@@ -469,6 +469,20 @@ h2.yellow-head {
 	border-bottom: 2px var(--primary) solid;
 	padding-top: 40px;
 	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+}
+h2.black-head {
+	color: var(--heading);
+	border-bottom: 2px var(--heading) solid;
+	padding-top: 40px;
+	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+}
+ul {
+	padding-left: 1rem;
+}
+ul > li {
+	padding-bottom: 0.725rem;
 }
 
 /* --- RESPONSIVE --- */
