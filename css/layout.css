@@ -542,6 +542,9 @@ div.single-head {
 .no-top-space {
 	margin-top: 0;
 }
+.no-bottom-space {
+	margin-bottom: 0;
+}
 
 .profile-section {
 	display: flex;
@@ -574,6 +577,74 @@ div.single-head {
 }
 .center-button > a {
 	max-width: 300px;
+}
+
+.filter-container {
+	margin-top: calc(var(--gap) / 2);
+}
+
+.filter-bar {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.filter-bar > button {
+	border-radius: var(--radius);
+	background-color: var(--bg-col);
+	border: 2px var(--form-color) solid;
+	color: var(--form-color);
+	padding: 14px 16px;
+	margin-right: 8px;
+	margin-bottom: 0.5rem;
+	font-size: 0.875rem;
+	font-weight: bold;
+	transition: background-color 0.2s ease-out, color 0.2s ease-out,
+		border-color 0.2s ease-out;
+}
+.filter-bar > button:hover,
+.filter-bar > button:active {
+	background-color: var(--primary);
+	color: var(--bg-col);
+	border-color: var(--primary);
+}
+
+/* Update Cards */
+
+.update-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* justify-content: space-around; */
+	/* align-items: center; */
+}
+.update {
+	max-width: 300px;
+	margin-bottom: var(--gap);
+	margin-right: 1rem;
+	/* height: 100%; */
+	display: flex;
+	flex-direction: column;
+	/* background-color: sandybrown; */
+}
+.update > h2 {
+	font-size: 1.5rem;
+	padding-top: 16px;
+}
+.update > time {
+	padding-top: 16px;
+}
+.update p {
+	padding-top: 16px;
+	padding-bottom: 40px;
+}
+.update > div {
+	background-color: var(--form-color);
+	width: 100%;
+	height: 212px;
+	/* margin-top: 32px; */
+	margin-top: auto;
 }
 
 /* --- RESPONSIVE --- */
