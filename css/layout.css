@@ -646,6 +646,42 @@ div.single-head {
 	/* margin-top: 32px; */
 	margin-top: auto;
 }
+.calendar-page {
+	background-color: #f2f2f2;
+	/* background-color: #e0e5ec; */
+}
+.calendar-container {
+	width: 100%;
+	/* height: 800px; */
+	background-color: antiquewhite;
+}
+#calendar {
+	/* background-color: #fff; */
+	/* background-color: #e0e5ec; */
+	background-color: #f2f2f2;
+	width: 100%;
+	padding: 1.8rem;
+	border-radius: var(--radius);
+	/* height: 500px; */
+	/* height: 80vh; */
+	/* box-shadow: 9px 9px 16px #a3b1c6, -9px -9px 16px #ffffff; */
+	box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 1),
+		12px 12px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* FULLCALENDAR THEME OVERRIDE START */
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+	border: none !important;
+}
+
+.fc-h-event {
+	background-color: var(--primary) !important;
+	border: 1px solid var(--primary) !important;
+	text-align: center !important;
+}
+/* FULLCALENDAR THEME OVERRIDE END */
 
 /* --- RESPONSIVE --- */
 

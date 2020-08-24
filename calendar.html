@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>School Calendar</title>
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/layout.css" />
+		<link rel="stylesheet" href="./node_modules/fullcalendar/main.css" />
+	</head>
+	<body class="calendar-page">
+		<div class="main-row no-bottom-space">
+			<div class="gutter"></div>
+			<div class="gutter"></div>
+			<div class="sub-row">
+				<div class="single-head">
+					<h1>School Calendar</h1>
+					<p>
+						Please check the calender on a monthly basis to ensure you are up to
+						date with all the school holidays and events.
+					</p>
+					<div class="sm-grey-zig"></div>
+				</div>
+			</div>
+			<div class="gutter"></div>
+			<div class="gutter"></div>
+		</div>
+
+		<div class="main-row">
+			<div class="gutter"></div>
+			<div class="gutter"></div>
+			<div class="sub-row">
+				<div class="calendar-container">
+					<div id="calendar"></div>
+				</div>
+			</div>
+			<div class="gutter"></div>
+			<div class="gutter"></div>
+		</div>
+
+		<script src="./node_modules/fullcalendar/main.js"></script>
+		<script src="./js/school-calendar.js"></script>
+	</body>
+</html>
