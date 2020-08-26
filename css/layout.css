@@ -647,26 +647,24 @@ div.single-head {
 	margin-top: auto;
 }
 .calendar-page {
-	background-color: #f2f2f2;
+	background-color: var(--neu-bg);
 	/* background-color: #e0e5ec; */
 }
 .calendar-container {
 	width: 100%;
-	/* height: 800px; */
-	background-color: antiquewhite;
 }
 #calendar {
 	/* background-color: #fff; */
 	/* background-color: #e0e5ec; */
-	background-color: #f2f2f2;
+	background-color: var(--neu-bg);
 	width: 100%;
 	padding: 1.8rem;
 	border-radius: var(--radius);
 	/* height: 500px; */
 	/* height: 80vh; */
 	/* box-shadow: 9px 9px 16px #a3b1c6, -9px -9px 16px #ffffff; */
-	box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 1),
-		12px 12px 12px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: -12px -12px 12px 0 var(--neu-top),
+		12px 12px 12px 0 var(--neu-bottom);
 }
 
 /* FULLCALENDAR THEME OVERRIDE START */
@@ -681,6 +679,39 @@ div.single-head {
 	border: 1px solid var(--primary) !important;
 	text-align: center !important;
 }
+.fc-event-title.fc-sticky {
+	color: var(--bg-col) !important;
+}
+.fc .fc-daygrid-day-top {
+	justify-content: center;
+	font-size: 1.2rem;
+}
+.fc .fc-daygrid-day-frame {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.fc-day-today {
+	/* background-color: var(--primary) !important; */
+	background-color: var(--cal-today) !important;
+	border-radius: var(--radius) !important;
+	/* color: var(--bg-col) !important; */
+}
+h2.fc-toolbar-title {
+	color: var(--heading) !important;
+	font-size: 2rem !important;
+	/* text-shadow: 0 0 8px var(--primary); */
+}
+table.fc-scrollgrid.fc-scrollgrid-liquid {
+	border: 0;
+}
+.fc-header-toolbar.fc-toolbar {
+	padding-bottom: 20px;
+}
+/* a.fc-col-header-cell-cushion {
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
+} */
 /* FULLCALENDAR THEME OVERRIDE END */
 
 /* --- RESPONSIVE --- */
@@ -740,6 +771,20 @@ div.single-head {
 		align-items: center;
 		padding: 0;
 	}
+	.fc-today-button {
+		display: none !important;
+	}
+	td.fc-list-event-time {
+		display: none;
+	}
+	.fc-list {
+		border-radius: var(--radius) !important;
+		padding-top: 10px !important;
+	}
+	.fc-list-event-dot {
+		background-color: var(--primary) !important;
+		border-color: var(--primary) !important;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -768,5 +813,8 @@ div.single-head {
 	}
 	.video-container {
 		opacity: 0.75;
+	}
+	.fc-list-day-cushion.fc-cell-shaded {
+		background-color: var(--neu-bg) !important;
 	}
 }

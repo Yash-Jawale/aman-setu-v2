@@ -17,6 +17,11 @@
 	--bg-col: #fff;
 	--scroll-bg: #ececec;
 	--primary-hover: #ecb62e;
+	--cal-today: #f4efd4;
+
+	--neu-bg: #f2f2f2;
+	--neu-top: rgba(255, 255, 255, 1);
+	--neu-bottom: rgba(0, 0, 0, 0.3);
 
 	/*Navigation*/
 	--nav-bg: #fdc124;
@@ -72,6 +77,11 @@
 		--bg-col: #121212;
 		--scroll-bg: #000;
 		--primary-hover: #ddba62;
+		--cal-today: rgba(253, 211, 104, 0.4);
+
+		--neu-bg: #202020;
+		--neu-top: #292929;
+		--neu-bottom: #151311;
 
 		/*Navigation*/
 		--nav-bg: #fdd368;
