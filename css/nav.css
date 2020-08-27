@@ -77,6 +77,7 @@ nav a {
 
 .submenu {
 	display: none;
+	line-height: unset;
 }
 .submenu-active .submenu {
 	display: block;
@@ -263,6 +264,7 @@ nav a {
 		border-radius: 8px;
 		padding: 12px 12px;
 		color: var(--nav-submenu-links);
+		z-index: 9999 !important;
 	}
 	.subitem > a {
 		color: var(--nav-submenu-links);
