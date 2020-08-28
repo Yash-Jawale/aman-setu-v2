@@ -2,6 +2,7 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+	overflow-x: hidden;
 }
 .container {
 	flex: 1;
@@ -50,6 +51,8 @@ body {
 }
 .gutter {
 	width: var(--gutter-width);
+	display: flex;
+	flex-direction: column-reverse;
 }
 .main-row {
 	display: flex;
@@ -451,6 +454,33 @@ textarea {
 	-webkit-mask-image: url("../assets/zig.svg");
 	-webkit-mask-size: cover;
 }
+.yellow-zig {
+	width: 359px;
+	height: 56px;
+	background-color: var(--zig-l);
+	position: relative;
+
+	mask-image: url("../assets/zig.svg");
+	mask-size: cover;
+	-webkit-mask-image: url("../assets/zig.svg");
+	-webkit-mask-size: cover;
+}
+.zig-l {
+	left: -50px;
+	-webkit-mask-position: center right;
+	mask-position: center right;
+	top: -50px;
+	/* mask-origin: right center; */
+}
+.zig-r-g {
+	left: -50px;
+	bottom: -50px;
+}
+.zig-r {
+	top: -100px;
+	right: -100px;
+	margin-left: auto;
+}
 
 /* UTILITY */
 
@@ -784,6 +814,9 @@ table.fc-scrollgrid.fc-scrollgrid-liquid {
 	.fc-list-event-dot {
 		background-color: var(--primary) !important;
 		border-color: var(--primary) !important;
+	}
+	.yellow-zig {
+		display: none;
 	}
 }
 
