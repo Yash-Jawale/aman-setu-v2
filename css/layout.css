@@ -7,6 +7,10 @@ body {
 .container {
 	flex: 1;
 }
+.content {
+	flex: 1;
+	width: 100%;
+}
 .col-1 {
 	width: 8.33%;
 }

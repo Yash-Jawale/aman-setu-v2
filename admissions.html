@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="./css/layout.css" />
 		<link rel="stylesheet" href="./css/footer.css" />
 	</head>
-	<body>
+	<body data-barba="wrapper">
 
 		<nav>
 			<ul class="menu">
@@ -71,7 +71,7 @@
 			</ul>
 		</nav>
 
-		
+		<div class="content" data-barba="container" data-barba-namespace="admissions">
 		<div class="main-row no-spacing">
 			<div class="sub-row">
 				<div class="col-b">
@@ -149,6 +149,7 @@
 				<div class="gutter"></div>
 			</div>
 		</div>
+	</div>
 
 
 		<footer>
@@ -201,7 +202,10 @@
 
 
 		
-
+		<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+		<script src="./js/anim.js"></script>
 		<script src="./js/nav.js"></script>
 	</body>
 </html>

@@ -12,9 +12,23 @@
 		/>
 		<link rel="stylesheet" href="./css/layout.css" />
 		<link rel="stylesheet" href="./css/index.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/combine/npm/fullcalendar@5.3.0/main.min.css,npm/fullcalendar@5.3.0/main.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.css"
+		/>
+
 		<link rel="stylesheet" href="./css/footer.css" />
 	</head>
-	<body>
+	<body data-barba="wrapper">
 		<nav>
 			<ul class="menu">
 				<li class="logo">
@@ -71,229 +85,235 @@
 			</ul>
 		</nav>
 
-		<div class="hero">
-			<h1>Welcome to Aman Setu</h1>
-			<h2>We Are A Community Of Learners</h2>
-		</div>
-		<div class="main-row">
-			<div class="gutter"></div>
-			<div class="sub-row">
-				<div class="col-5">
-					<!-- <div class="col-s"> -->
-					<div class="cont-l grey-text">
-						<p>
-							At Aman Setu we use innovative learning practices that encourage
-							children to be curious and learn from experiences that foster
-							creativity and empathy.
-						</p>
-						<p>
-							We dream of a peaceful future for our children. We call our school
-							the Bridge of Peace; a place where all the socially created gaps
-							of varying class, caste, religion and linguistic groups and
-							learning needs are “Bridged in peace”.
-						</p>
-						<a href="#" class="primary">Take Admission Now</a>
-						<a href="#" class="secondary">Work with Us</a>
-					</div>
-				</div>
-				<div class="col-7">
-					<!-- <div class="col-b"> -->
-					<div class="video-container">
-						<iframe
-							width="534"
-							src="https://www.youtube.com/embed/1rF1_Pvwl68"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-					</div>
-				</div>
-				<div class="gutter">
-					<div class="yellow-zig zig-r-g"></div>
-					<div class="yellow-zig zig-r-g"></div>
-				</div>
+		<div class="content" data-barba="container" data-barba-namespace="home">
+			<div class="hero">
+				<h1>Welcome to Aman Setu</h1>
+				<h2>We Are A Community Of Learners</h2>
 			</div>
-			<!-- <div class="gutter"></div> -->
-		</div>
-
-		<div class="main-row">
-			<!-- <div class="side-img"></div> -->
-			<div class="sub-row">
-				<!-- <div class="col-7"> -->
-				<div class="col-b">
-					<div class="img-cont-l">
-						<img
-							src="./assets/images/homepage/why-we-are-different.jpg"
-							alt=""
-							class="side-img"
-						/>
-						<!-- <div class="side-img" style="background-color: aqua;"></div> -->
+			<div class="main-row">
+				<div class="gutter"></div>
+				<div class="sub-row">
+					<div class="col-5">
+						<!-- <div class="col-s"> -->
+						<div class="cont-l grey-text">
+							<p>
+								At Aman Setu we use innovative learning practices that encourage
+								children to be curious and learn from experiences that foster
+								creativity and empathy.
+							</p>
+							<p>
+								We dream of a peaceful future for our children. We call our
+								school the Bridge of Peace; a place where all the socially
+								created gaps of varying class, caste, religion and linguistic
+								groups and learning needs are “Bridged in peace”.
+							</p>
+							<a href="#" class="primary">Take Admission Now</a>
+							<a href="#" class="secondary">Work with Us</a>
+						</div>
 					</div>
-					<div class="yellow-zig zig-l"></div>
-					<div class="yellow-zig zig-l"></div>
+					<div class="col-7">
+						<!-- <div class="col-b"> -->
+						<div class="video-container">
+							<iframe
+								width="534"
+								src="https://www.youtube.com/embed/1rF1_Pvwl68"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+						</div>
+					</div>
+					<div class="gutter">
+						<div class="yellow-zig zig-r-g"></div>
+						<div class="yellow-zig zig-r-g"></div>
+					</div>
 				</div>
-				<!-- <div class="col-5"> -->
-				<div class="col-s">
-					<div class="cont-r home-section">
-						<h2>Why We're Different</h2>
-						<div class="features">
+				<!-- <div class="gutter"></div> -->
+			</div>
+
+			<div class="main-row">
+				<!-- <div class="side-img"></div> -->
+				<div class="sub-row">
+					<!-- <div class="col-7"> -->
+					<div class="col-b">
+						<div class="img-cont-l">
 							<img
-								src="./assets/images/homepage/curriculum-innovation.svg"
+								src="./assets/images/homepage/why-we-are-different.jpg"
 								alt=""
+								class="side-img"
 							/>
-							<h3>Curriculum Innovation</h3>
-							<p>
-								We have an in house team of educationists and researchers
-								constantly innovating and improvising on our curriculum.
-							</p>
-							<a href="#">Know More About Madhavi Kapur Foundation</a>
+							<!-- <div class="side-img" style="background-color: aqua;"></div> -->
 						</div>
-						<div class="features">
-							<img src="./assets/images/homepage/community.svg" alt="" />
-							<h3>Community</h3>
-							<p>
-								We involve parents, teachers, students and staff in all
-								processes, creating a democratic atmosphere of trust and
-								responsibility while valuing relationships between all
-								stakeholders to facilitate a thriving community.
-							</p>
-						</div>
-						<div class="features">
-							<img
-								src="./assets/images/homepage/experiential-learning.svg"
-								alt=""
-							/>
-							<h3>Experiential Learning</h3>
-							<p>
-								We inculcate in our students a deep sense of curiosity and
-								wonder, thus making them lifelong learners, innovators,
-								collaborators and problem solvers. We grow together through
-								experiences.
-							</p>
-						</div>
-						<a href="#" class="secondary">Read about our Curriculum</a>
+						<div class="yellow-zig zig-l"></div>
+						<div class="yellow-zig zig-l"></div>
 					</div>
-				</div>
-			</div>
-			<div class="gutter"></div>
-		</div>
-
-		<div class="main-row">
-			<div class="gutter"></div>
-			<div class="sub-row">
-				<div class="col-1"></div>
-				<div class="col-10">
-					<div class="quote-section">
-						<p>
-							“I believe that children deserve a childhood - Unburdened with
-							heavy books and bags, Uncluttered with a haze of subjects,
-							Unshackled from rigid teaching methods and styles, Unopressed from
-							the stress to perform”
-						</p>
-
-						<div class="image-cont quote-img">
-							<img
-								src="./assets/images/homepage/principal-aman-setu.jpg"
-								alt=""
-							/>
-						</div>
-						<div class="quote-author grey-text">Ruchi A</div>
-						<div class="quote-designation grey-text">Principal & Trustree</div>
-					</div>
-				</div>
-				<div class="col-1"></div>
-			</div>
-			<div class="gutter"></div>
-		</div>
-
-		<div class="main-row">
-			<!-- <div class="side-img"></div> -->
-			<div class="gutter"></div>
-			<div class="sub-row">
-				<!-- <div class="col-5"> -->
-				<div class="col-s">
-					<div class="cont-l home-section">
-						<h2>Scholarships</h2>
-						<h3>We support children from underprivileged backgrounds</h3>
-						<p>
-							We fund complete tuition, stationery, transport, meals and books
-							for underprivileged students. Want to help make a difference in
-							these childrens’ lives?
-						</p>
-						<p>
-							We accept donations of various kinds! Sign up to volunteer your
-							time, donate books, study resources, furniture, lab equipement
-							etc, or make valuable fund contributions.
-						</p>
-						<a href="#" class="primary">Contribute Now!</a>
-					</div>
-				</div>
-				<!-- <div class="col-7"> -->
-				<div class="col-b">
-					<div class="img-cont-r">
-						<img
-							src="./assets/images/homepage/scholarships.jpg"
-							alt=""
-							class="side-img"
-						/>
-						<!-- <div class="side-img" style="background-color: aqua;"></div> -->
-					</div>
-					<div class="yellow-zig zig-r"></div>
-					<div class="yellow-zig zig-r"></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="main-row">
-			<!-- <div class="side-img"></div> -->
-			<div class="sub-row">
-				<!-- <div class="col-7"> -->
-				<div class="col-b">
-					<div class="img-cont-l">
-						<img
-							src="./assets/images/homepage/what-people-are-saying-about-us.jpg"
-							alt=""
-							class="side-img"
-						/>
-						<!-- <div class="side-img" style="background-color: aqua;"></div> -->
-					</div>
-					<div class="yellow-zig zig-l"></div>
-					<div class="yellow-zig zig-l"></div>
-				</div>
-				<!-- <div class="col-5"> -->
-				<div class="col-s">
-					<div class="cont-r home-section">
-						<h2 class="review-section-head">What People Are Saying About Us</h2>
-
-						<div class="review">
-							<p>
-								At Aman Setu I feel like a free bird. We have a different ways
-								of learning with very little pressure. I like this school
-								because we have freedom.
-							</p>
-							<div class="rev-author">
-								Adweeka Kadam,<br />
-								Student, Grade 7
+					<!-- <div class="col-5"> -->
+					<div class="col-s">
+						<div class="cont-r home-section">
+							<h2>Why We're Different</h2>
+							<div class="features">
+								<img
+									src="./assets/images/homepage/curriculum-innovation.svg"
+									alt=""
+								/>
+								<h3>Curriculum Innovation</h3>
+								<p>
+									We have an in house team of educationists and researchers
+									constantly innovating and improvising on our curriculum.
+								</p>
+								<a href="#">Know More About Madhavi Kapur Foundation</a>
 							</div>
+							<div class="features">
+								<img src="./assets/images/homepage/community.svg" alt="" />
+								<h3>Community</h3>
+								<p>
+									We involve parents, teachers, students and staff in all
+									processes, creating a democratic atmosphere of trust and
+									responsibility while valuing relationships between all
+									stakeholders to facilitate a thriving community.
+								</p>
+							</div>
+							<div class="features">
+								<img
+									src="./assets/images/homepage/experiential-learning.svg"
+									alt=""
+								/>
+								<h3>Experiential Learning</h3>
+								<p>
+									We inculcate in our students a deep sense of curiosity and
+									wonder, thus making them lifelong learners, innovators,
+									collaborators and problem solvers. We grow together through
+									experiences.
+								</p>
+							</div>
+							<a href="#" class="secondary">Read about our Curriculum</a>
 						</div>
+					</div>
+				</div>
+				<div class="gutter"></div>
+			</div>
 
-						<div class="review">
+			<div class="main-row">
+				<div class="gutter"></div>
+				<div class="sub-row">
+					<div class="col-1"></div>
+					<div class="col-10">
+						<div class="quote-section">
 							<p>
-								The school is a loving space for children which means that as a
-								teacher one is trained to introspect and be more aware of the
-								needs of children. Therefore being Aman Setu I have become a
-								better student centric teacher who enjoys teaching her students
-								to the fullest.
+								“I believe that children deserve a childhood - Unburdened with
+								heavy books and bags, Uncluttered with a haze of subjects,
+								Unshackled from rigid teaching methods and styles, Unopressed
+								from the stress to perform”
 							</p>
-							<div class="rev-author">
-								Priyanthy Aprain,<br />
-								English and Social Sciences Teacher
+
+							<div class="image-cont quote-img">
+								<img
+									src="./assets/images/homepage/principal-aman-setu.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="quote-author grey-text">Ruchi A</div>
+							<div class="quote-designation grey-text">
+								Principal & Trustree
 							</div>
 						</div>
 					</div>
+					<div class="col-1"></div>
+				</div>
+				<div class="gutter"></div>
+			</div>
+
+			<div class="main-row">
+				<!-- <div class="side-img"></div> -->
+				<div class="gutter"></div>
+				<div class="sub-row">
+					<!-- <div class="col-5"> -->
+					<div class="col-s">
+						<div class="cont-l home-section">
+							<h2>Scholarships</h2>
+							<h3>We support children from underprivileged backgrounds</h3>
+							<p>
+								We fund complete tuition, stationery, transport, meals and books
+								for underprivileged students. Want to help make a difference in
+								these childrens’ lives?
+							</p>
+							<p>
+								We accept donations of various kinds! Sign up to volunteer your
+								time, donate books, study resources, furniture, lab equipement
+								etc, or make valuable fund contributions.
+							</p>
+							<a href="#" class="primary">Contribute Now!</a>
+						</div>
+					</div>
+					<!-- <div class="col-7"> -->
+					<div class="col-b">
+						<div class="img-cont-r">
+							<img
+								src="./assets/images/homepage/scholarships.jpg"
+								alt=""
+								class="side-img"
+							/>
+							<!-- <div class="side-img" style="background-color: aqua;"></div> -->
+						</div>
+						<div class="yellow-zig zig-r"></div>
+						<div class="yellow-zig zig-r"></div>
+					</div>
 				</div>
 			</div>
-			<div class="gutter"></div>
+
+			<div class="main-row">
+				<!-- <div class="side-img"></div> -->
+				<div class="sub-row">
+					<!-- <div class="col-7"> -->
+					<div class="col-b">
+						<div class="img-cont-l">
+							<img
+								src="./assets/images/homepage/what-people-are-saying-about-us.jpg"
+								alt=""
+								class="side-img"
+							/>
+							<!-- <div class="side-img" style="background-color: aqua;"></div> -->
+						</div>
+						<div class="yellow-zig zig-l"></div>
+						<div class="yellow-zig zig-l"></div>
+					</div>
+					<!-- <div class="col-5"> -->
+					<div class="col-s">
+						<div class="cont-r home-section">
+							<h2 class="review-section-head">
+								What People Are Saying About Us
+							</h2>
+
+							<div class="review">
+								<p>
+									At Aman Setu I feel like a free bird. We have a different ways
+									of learning with very little pressure. I like this school
+									because we have freedom.
+								</p>
+								<div class="rev-author">
+									Adweeka Kadam,<br />
+									Student, Grade 7
+								</div>
+							</div>
+
+							<div class="review">
+								<p>
+									The school is a loving space for children which means that as
+									a teacher one is trained to introspect and be more aware of
+									the needs of children. Therefore being Aman Setu I have become
+									a better student centric teacher who enjoys teaching her
+									students to the fullest.
+								</p>
+								<div class="rev-author">
+									Priyanthy Aprain,<br />
+									English and Social Sciences Teacher
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="gutter"></div>
+			</div>
 		</div>
 
 		<footer>
@@ -344,6 +364,18 @@
 			</section>
 		</footer>
 
+		<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+		<script src="./js/anim.js"></script>
+
+		<!-- <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/locales-all.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/locales-all.min.js"></script> -->
+
 		<script src="./js/nav.js"></script>
+		<!-- <script src="./js/school-calendar.js"></script> -->
+		<script src="./js/file.js"></script>
 	</body>
 </html>

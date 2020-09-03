@@ -11,7 +11,8 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
 		/>
 		<link rel="stylesheet" href="./css/layout.css" />
-		<!-- <link rel="stylesheet" href="./node_modules/fullcalendar/main.css" /> -->
+		<link rel="stylesheet" href="./css/index.css" />
+
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/combine/npm/fullcalendar@5.3.0/main.min.css,npm/fullcalendar@5.3.0/main.min.css"
@@ -24,9 +25,10 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.css"
 		/>
+
 		<link rel="stylesheet" href="./css/footer.css" />
 	</head>
-	<body class="calendar-page">
+	<body data-barba="wrapper">
 		<nav>
 			<ul class="menu">
 				<li class="logo">
@@ -83,33 +85,44 @@
 			</ul>
 		</nav>
 
-		<div class="main-row no-bottom-space">
-			<div class="gutter"></div>
-			<div class="gutter"></div>
-			<div class="sub-row">
-				<div class="single-head">
-					<h1>School Calendar</h1>
-					<p>
-						Please check the calender on a monthly basis to ensure you are up to
-						date with all the school holidays and events.
-					</p>
-					<div class="sm-grey-zig"></div>
+		<div
+			class="content calendar-page"
+			data-barba="container"
+			data-barba-namespace="calendar"
+		>
+			<div class="main-row no-bottom-space">
+				<div class="gutter"></div>
+				<div class="gutter"></div>
+				<div class="sub-row">
+					<div class="single-head">
+						<h1>School Calendar</h1>
+						<p>
+							Please check the calender on a monthly basis to ensure you are up
+							to date with all the school holidays and events.
+						</p>
+						<div class="sm-grey-zig"></div>
+					</div>
 				</div>
+				<div class="gutter"></div>
+				<div class="gutter"></div>
 			</div>
-			<div class="gutter"></div>
-			<div class="gutter"></div>
-		</div>
 
-		<div class="main-row">
-			<div class="gutter"></div>
-			<div class="gutter"></div>
-			<div class="sub-row">
-				<div class="calendar-container">
-					<div id="calendar"></div>
+			<div class="main-row">
+				<div class="gutter"></div>
+				<div class="gutter"></div>
+				<div class="sub-row">
+					<div class="calendar-container">
+						<div id="calendar"></div>
+					</div>
 				</div>
+				<div class="gutter"></div>
+				<div class="gutter"></div>
 			</div>
-			<div class="gutter"></div>
-			<div class="gutter"></div>
+			<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/locales-all.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/locales-all.min.js"></script>
+			<script src="./js/school-calendar.js"></script>
 		</div>
 
 		<footer>
@@ -161,13 +174,18 @@
 		</footer>
 
 		<!-- <script src="./node_modules/fullcalendar/main.js"></script> -->
-		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/locales-all.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/locales-all.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+		<script src="./js/anim.js"></script>
 
-		<script src="./js/school-calendar.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/locales-all.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/locales-all.min.js"></script> -->
 
 		<script src="./js/nav.js"></script>
+		<script src="./js/school-calendar.js"></script>
+		<script src="./js/file.js"></script>
 	</body>
 </html>
