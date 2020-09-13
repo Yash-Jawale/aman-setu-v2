@@ -1,22 +1,22 @@
 {
-  "name": "aman-setu-v2",
-  "version": "1.0.0",
-  "description": "The Website for Aman Setu My School",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Yash-Jawale/aman-setu-v2.git"
-  },
-  "author": "Yash Jawale",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Yash-Jawale/aman-setu-v2/issues"
-  },
-  "homepage": "https://github.com/Yash-Jawale/aman-setu-v2#readme",
-  "dependencies": {
-    "fullcalendar": "^5.3.0"
-  }
+	"name": "aman-setu-v2",
+	"version": "1.0.0",
+	"description": "The Website for Aman Setu My School",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Yash-Jawale/aman-setu-v2.git"
+	},
+	"author": "Yash Jawale",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Yash-Jawale/aman-setu-v2/issues"
+	},
+	"homepage": "https://github.com/Yash-Jawale/aman-setu-v2#readme",
+	"dependencies": {
+		"fullcalendar": "^5.3.0"
+	}
 }
