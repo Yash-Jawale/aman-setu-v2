@@ -29,6 +29,12 @@ const Blog = async () => {
       const dv = document.createElement("div");
       dv.classList = "update";
 
+      const id = result[i]._id;
+      // console.log(id);
+
+      link = `https://young-inlet-33241.herokuapp.com/announcements?id=${id}`;
+      console.log(link);
+
       //   const img = document.createElement("img");
       //   img.classList = "blog__img";
       //   img.src = `${result[i].thumbnailimg.url}`;
@@ -40,24 +46,25 @@ const Blog = async () => {
       let thumbimage = null;
 
       if (result[i].hasOwnProperty("cover")) {
-        console.log(result[i]);
+        // console.log(result[i]);
         thumbimage = document.createElement("div");
         thumbimage.style.backgroundImage = `url(${result[i].cover.formats.large.url})`;
       }
 
       //   console.log(result[1].cover.formats.large.url);
 
-      //   const desc = document.createElement("p");
-      //   desc.classList = " description";
-      //   desc.textContent = `${result[i].description}`;
+      const desc = document.createElement("p");
+      // desc.classList = " description";
+      desc.textContent = `${result[i].content}`;
 
       //   const date = document.createElement("p");
       //   date.classList = "date";
       //   date.textContent = `${result[i].date}`;
 
-      //   const hrf = document.createElement("a");
+      const hrf = document.createElement("a");
       //   hrf.classList = "below";
-      //   hrf.textContent = "Read More Below:";
+      hrf.href = link;
+      hrf.textContent = "Read More";
 
       //   const readmore = document.createElement("div");
       //   readmore.classList = "readmore";
@@ -67,12 +74,12 @@ const Blog = async () => {
 
       //   dv.appendChild(img);
       dv.appendChild(heading);
+      dv.appendChild(desc);
+      dv.appendChild(hrf);
       if (thumbimage !== null) {
         dv.appendChild(thumbimage);
       }
-      //   dv.appendChild(desc);
       //   dv.appendChild(date);
-      //   dv.appendChild(hrf);
       //   dv.appendChild(readmore);
       //   dv.appendChild(hr);
 
