@@ -130,9 +130,6 @@ const Blog = async (inputLink) => {
 			dv.classList = "update";
 			// console.log(result);
 
-			const id = result[i]._id;
-			// console.log(id);
-
 			//   const img = document.createElement("img");
 			//   img.classList = "blog__img";
 			//   img.src = `${result[i].thumbnailimg.url}`;
@@ -179,7 +176,11 @@ const Blog = async (inputLink) => {
 
 			// link = `https://young-inlet-33241.herokuapp.com/announcements?id=${id}`;
 			// console.log(link);
-			let link = inputLink.substring(39);
+			let path = inputLink.substring(39);
+			const id = result[i]._id;
+			// console.log(id);
+
+			link = `${path}?id=${id}`;
 			// console.log(link);
 
 			const hrf = document.createElement("a");
