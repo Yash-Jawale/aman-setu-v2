@@ -133,9 +133,6 @@ const Blog = async (inputLink) => {
 			const id = result[i]._id;
 			// console.log(id);
 
-			link = `https://young-inlet-33241.herokuapp.com/announcements?id=${id}`;
-			// console.log(link);
-
 			//   const img = document.createElement("img");
 			//   img.classList = "blog__img";
 			//   img.src = `${result[i].thumbnailimg.url}`;
@@ -174,10 +171,21 @@ const Blog = async (inputLink) => {
 			//   date.classList = "date";
 			//   date.textContent = `${result[i].date}`;
 
-			// const hrf = document.createElement("a");
+			// console.log(result[i].createdAt.substring(0, 10));
+			const date = document.createElement("time");
+			dateString = result[i].createdAt.substring(0, 10);
+			date.dateTime = dateString;
+			date.innerText = dateString;
+
+			// link = `https://young-inlet-33241.herokuapp.com/announcements?id=${id}`;
+			// console.log(link);
+			let link = inputLink.substring(39);
+			// console.log(link);
+
+			const hrf = document.createElement("a");
 			//   hrf.classList = "below";
-			// hrf.href = link;
-			// hrf.textContent = "Read More";
+			hrf.href = link;
+			hrf.textContent = "Read More";
 
 			//   const readmore = document.createElement("div");
 			//   readmore.classList = "readmore";
@@ -186,13 +194,14 @@ const Blog = async (inputLink) => {
 			//   const hr = document.createElement("hr");
 
 			//   dv.appendChild(img);
+			dv.appendChild(date);
 			dv.appendChild(heading);
 			dv.appendChild(desc);
-			// dv.appendChild(hrf);
+			dv.appendChild(hrf);
 			if (thumbimage !== null) {
 				dv.appendChild(thumbimage);
 			}
-			//   dv.appendChild(date);
+
 			//   dv.appendChild(readmore);
 			//   dv.appendChild(hr);
 
@@ -204,6 +213,13 @@ const Blog = async (inputLink) => {
 };
 
 function updateButtonHandler() {
+	if (eventButton.classList.contains("active-category")) {
+		eventButton.classList.remove("active-category");
+	}
+	if (circularButton.classList.contains("active-category")) {
+		circularButton.classList.remove("active-category");
+	}
+	updateButton.classList.add("active-category");
 	// bloghost = "https://young-inlet-33241.herokuapp.com/updates";
 
 	// Blog("https://young-inlet-33241.herokuapp.com/announcements");
@@ -212,6 +228,13 @@ function updateButtonHandler() {
 }
 
 function eventButtonHandler() {
+	if (updateButton.classList.contains("active-category")) {
+		updateButton.classList.remove("active-category");
+	}
+	if (circularButton.classList.contains("active-category")) {
+		circularButton.classList.remove("active-category");
+	}
+	eventButton.classList.add("active-category");
 	// bloghost = "https://young-inlet-33241.herokuapp.com/events";
 
 	Blog("https://young-inlet-33241.herokuapp.com/events");
@@ -219,6 +242,13 @@ function eventButtonHandler() {
 }
 
 function circularButtonHandler() {
+	if (updateButton.classList.contains("active-category")) {
+		updateButton.classList.remove("active-category");
+	}
+	if (eventButton.classList.contains("active-category")) {
+		eventButton.classList.remove("active-category");
+	}
+	circularButton.classList.add("active-category");
 	// bloghost = "https://young-inlet-33241.herokuapp.com/circulars";
 
 	Blog("https://young-inlet-33241.herokuapp.com/circulars");
